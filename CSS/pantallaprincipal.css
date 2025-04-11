@@ -1,0 +1,134 @@
+:root {
+    --color-principal: #b96f76;
+    --color-secundario: #ff4b5c;
+    --color-fondo: #f1f1f1;
+    --color-texto: #424242;
+    --color-titulo: rgb(80, 77, 95);
+    --color-subtitulo: rgb(38, 96, 143);
+    --color-nav-texto: rgb(233, 221, 221);
+    --color-nav-bg: #777171;
+    --color-nav-hover: #ffddc1;
+    --color-tarjeta-bg: #ffffff;
+    --color-tarjeta-borde: #f1f1f1;
+    --color-letra-tipoPerfume:#9d9edd;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-principal);
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    color: var(--color-titulo);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 24px;
+    color: #bbbbbb;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    background-color: var(--color-nav-bg);
+}
+
+nav a {
+    color: var(--color-nav-texto);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-nav-hover);
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--color-secundario);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    background-color: var(--color-tarjeta-bg);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul li img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid var(--color-tarjeta-borde);
+}
+
+ul li p {
+    padding: 10px;
+    font-size: 1em;
+}
+
+ul li p strong {
+    font-weight: bold;
+    color: var(--color-letra-tipoPerfume);
+}
+

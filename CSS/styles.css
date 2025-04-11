@@ -1,0 +1,111 @@
+/* Definición de colores en :root */
+:root {
+    --color-primary: #ff4b5c;  /* Color principal (rojo) */
+    --color-primary-light: #ff3344; /* Variante más clara del color principal */
+    --color-background: #fafafa; /* Fondo de la página */
+    --color-text: #333;  /* Color del texto principal */
+    --color-text-light: #555; /* Color para texto secundario */
+    --color-price: #ff4b5c; /* Color para precios */
+    --color-white: #fff; /* Blanco */
+    --color-shadow: rgba(0, 0, 0, 0.1); /* Sombra suave */
+    --color-hover-shadow: rgba(0, 0, 0, 0.15); /* Sombra en hover */
+    --color-border: #ddd; /* Color para los bordes */
+    --color-background-box: #e2b2b2; /* Fondo sutil para cajas de texto */
+    --color-text-shadow: rgba(0, 0, 0, 0.2); /* Sombra de texto */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Sección principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 20px var(--color-shadow);
+    max-width: 900px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border: 1px solid var(--color-border);
+}
+
+section:hover {
+    box-shadow: 0 12px 30px var(--color-hover-shadow);
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+section img {
+    border-radius: 12px;
+    max-width: 100%;
+    box-shadow: 0 5px 15px var(--color-shadow);
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.05); /* Efecto de zoom suave en la imagen */
+}
+
+section p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--color-text-light);
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--color-background-box); /* Fondo sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    line-height: 1.8;
+}
+
+section p strong {
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+section .price {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--color-price);
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: var(--color-background-box);
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 12px 30px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--color-primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
